@@ -1,0 +1,15 @@
+[index]
+
+description = "Tools for filesystem operations"
+
+tools = [
+    "filesystem.read_files",
+    "filesystem.write_file",
+    "filesystem.edit_file",
+    "filesystem.create_dir",
+    "filesystem.list_dir",
+    "filesystem.move",
+    "filesystem.search",
+    "filesystem.get_path_info",
+    "filesystem.list_allowed_dir",
+]
