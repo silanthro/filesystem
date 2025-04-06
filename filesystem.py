@@ -25,6 +25,8 @@ ALLOWED_DIR = _get_allowed_dir()
 
 
 def _path_is_allowed(path: str):
+    if any(Path(path).resolve() == dir for dir in ALLOWED_DIR):
+        return
     if not any(dir in Path(path).resolve().parents for dir in ALLOWED_DIR):
         raise NotAuthorizedError()
 
